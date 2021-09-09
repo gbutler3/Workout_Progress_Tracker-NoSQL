@@ -28,15 +28,24 @@ router.put("/api/workouts/:id", (req, res) => {
   const body = req.body;
 
   workouts.Workout.findOneAndUpdate({ _id: id }, { $push: { exercises: body } })
-    .then((dbWorkout) => {
+    .then(dbWorkout => {
       res.json(dbWorkout);
     })
     .catch((err) => {
       res.status(400).json(err);
       console.log(err)
-    });git 
+    });
 });
 
-
+router.get("/api/workouts/range", (req, res) => {
+  workouts.Workout.find({})
+  .then(dbWorkout => {
+    res.json(dbWorkout);
+  })
+  .catch((err) => {
+    res.status(400).json(err);
+    console.log(err)
+  });
+});
 
 module.exports = router;
