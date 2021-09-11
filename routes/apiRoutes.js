@@ -29,9 +29,7 @@ router.put("/api/workouts/:id", (req, res) => {
 
   workouts.Workout.findOneAndUpdate(
     { _id: id }, 
-    { $push: { exercises: body }}, 
-    { new: true, runValidators: true} //this is so it doesn't log a new workout for every exercise you put in on one day. It adds to duration, weight ect. 
-    )
+    { $push: { exercises: body }})
     .then(dbWorkout => {
       res.json(dbWorkout);
     })
@@ -42,11 +40,12 @@ router.put("/api/workouts/:id", (req, res) => {
 });
 
 router.get("/api/workouts/range", (req, res) => {
-  workouts.Workout.find({})
-  .sort({$natural: -1})// shows the last 7 days. Only issue is it shows the chart backwards
-  .limit(7) //this limits the data so that it shows 7 workouts
+  workouts.Workout.find()
+  .sort({ _id: -1 })
+  .limit(7)
   .then(dbWorkout => {
-    res.json(dbWorkout);
+    console.log(dbWorkout)
+    res.json(dbWorkout.reverse());
   })
   .catch((err) => {
     res.status(400).json(err);
