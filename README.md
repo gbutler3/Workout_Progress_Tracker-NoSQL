@@ -6,6 +6,7 @@
 2. [Acceptance Criteria](#acceptance-criteria)
 3. [WalkThrough](#walkthrough)
 4. [License](#license)
+5. [Contact](#contact)
 
 ## Description
 
@@ -27,8 +28,16 @@ The user should be able to:
 
 ## WalkThrough
 
+[Deployed Application on Heroku](https://blooming-sands-23937.herokuapp.com/)
+
 https://user-images.githubusercontent.com/82067962/132960423-a6d521ff-526c-4bb0-850d-688452e51f74.mp4
 
 ## License
 
 ![MIT License](https://img.shields.io/badge/License-MIT-brightgreen)
+
+## Contact
+
+Email: gmx.butler@gmail.com <br/>
+GitHub: https://github.com/gbutler3 <br/>
+Linkedin: https://www.linkedin.com/in/grace-butler-834429188/
