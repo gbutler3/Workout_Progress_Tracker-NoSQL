@@ -27,9 +27,7 @@ The user should be able to:
 
 ## WalkThrough
 
-Coming Soon!
-
-<!-- [ Demo!](https://drive.google.com/file/d/1hCM_2f3Pm1eOjfHKuDEPyN0VEiSMdaGV/view?usp=sharing) -->
+https://user-images.githubusercontent.com/82067962/132960423-a6d521ff-526c-4bb0-850d-688452e51f74.mp4
 
 ## License
 
